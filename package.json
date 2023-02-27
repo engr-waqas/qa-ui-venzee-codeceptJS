@@ -1,0 +1,34 @@
+{
+    "name": "codeceptjs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "codeceptjs": "codeceptjs run --steps",
+        "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
+        "codeceptjs:ui": "codecept-ui --app",
+        "codeceptjs:demo": "codeceptjs run --steps -c node_modules/@codeceptjs/examples/codecept.puppeteer.conf.js",
+        "codeceptjs:demo:headless": "HEADLESS=true codeceptjs run --steps -c node_modules/@codeceptjs/examples/codecept.puppeteer.conf.js",
+        "codeceptjs:demo:ui": "codecept-ui --app  -c node_modules/@codeceptjs/examples/codecept.puppeteer.conf.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@codeceptjs/configure": "^0.7.0",
+        "@codeceptjs/examples": "^1.2.1",
+        "@codeceptjs/mock-request": "^0.3.1",
+        "@codeceptjs/ui": "^0.4.6",
+        "@pollyjs/adapter-puppeteer": "^6.0.4",
+        "@pollyjs/core": "^6.0.4",
+        "chai": "^4.3.6",
+        "codeceptjs": "^3.2.3",
+        "mocha": "^9.2.0",
+        "puppeteer": "^5.5.0"
+    },
+    "dependencies": {
+        "codeceptjs-chai": "^2.3.2",
+        "mochawesome": "^7.0.1"
+    }
+}
